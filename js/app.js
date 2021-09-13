@@ -8,7 +8,6 @@ const loadProducts = () => {
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
-     console.log(product)
     const image = product.image;
     const div = document.createElement("div");
     div.classList.add("product");
@@ -61,7 +60,6 @@ const getInputValue = (id) => {
 const updatePrice = (id, value) => {
   const convertedOldPrice = getInputValue(id);
   const convertPrice = parseFloat(value);
-  console.log(convertPrice)
   const total = convertedOldPrice + convertPrice;
   document.getElementById(id).innerText = total.toFixed(2);
 };
@@ -93,7 +91,6 @@ const updateTotal = () => {
   const grandTotal =
     getInputValue("price") + getInputValue("delivery-charge") +
     getInputValue("total-tax");
-    console.log(document.getElementById("price"))
   document.getElementById("total").innerText = grandTotal.toFixed(2);
 };
 
