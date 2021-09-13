@@ -52,6 +52,9 @@ body {
   border-radius: 5px;
 
 }
+.rating-section{
+  margin-bottom: .5em;
+}
 .rate{
   margin-right: 1em;
 }

@@ -19,7 +19,7 @@ const showProducts = (products) => {
       <h3>${product.title.slice(0,50)}</h3>
       <p>Category: ${product.category}</p>
       <h2>Price: $ ${product.price}</h2>
-       <div>
+       <div class="rating-section">
        <span class="rate">
          <small>rating:${product.rating.rate}</small>
        </span>
